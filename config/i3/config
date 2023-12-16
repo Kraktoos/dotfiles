@@ -602,17 +602,15 @@ exec --no-startup-id /usr/bin/dunst
 
 # https://github.com/nwg-piotr/autotiling
 
-# `yay -S autotiling ;) (it is in AUR)
-
-exec_always --no-startup-id autotiling
 
 # Autostart apps as you like
 
-#exec --no-startup-id sleep 2 && xfce4-terminal
-#exec --no-startup-id sleep 3 && thunar
-exec --no-startup-id redshift-gtk
-exec --no-startup-id solaar
+#exec --no-startup-id redshift-gtk
+exec --no-startup-id gummy start
+exec --no-startup-id solaar --window=hide
+exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id xcompmgr
+exec_always --no-startup-id autotiling
 
 ###############
 
